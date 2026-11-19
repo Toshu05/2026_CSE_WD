@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickArt - Custom Art Supplies & Creations</title>
+    <meta name="description" content="Discover unique art supplies and custom creations at QuickArt. Shop brushes, canvases, and more.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">QUICKCART</div>
+        <img src="IMAGES/quickcart.png"width="50" height="50">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Search products...">
+            <button id="cart-btn">Cart (0)</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>WELCOME TO QUICKCART</h1>
+        <p>Unleash Your Creativity With Our Premium Art Supplies And Custom Designs.</p>
+        <a href="#products" class="cta-btn">Shop Now</a>
+    </section>
+
+    <section id="products" class="product-grid">
+        <h1>Featured Products</h1>
+        <h2>DRAWING</h2>
+        <div class="products">
+            <div class="product">
+                <img src="IMAGES/premium brush.webp" alt="Art Brush Set">
+                <h3>Premium Brush Set</h3>
+                <p>&#8377;50</p>
+                <button class="add-to-cart" data-product="brush" data-price="50">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="IMAGES/CANVAS_KIT.jpg" alt="Canvas Kit">
+                <h3>Canvas Kit</h3>
+                <p>&#8377;120</p>
+                <button class="add-to-cart" data-product="canvas" data-price="120">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img src="IMAGES/ACRYLIC PAINTS.jpg" alt="Acrylic Paints">
+                <h3>Acrylic Paints</h3>
+                <p>&#8377;200</p>
+                <button class="add-to-cart" data-product="paint" data-price="200">Add to Cart</button>
+
+            </div>         
+        </div>
+    </section>
+
+    <section id="products" class="product-grid">
+        <h2>STATIONARY</h2>
+        <div class="products">
+            <div class="product">
+                <img src="IMAGES/pen set.webp" alt="PEN SET">
+                <h3>PEN SET</h3>
+                <p>&#8377;30</p>
+                <button class="add-to-cart" data-product="PEN" data-price="30">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="IMAGES/books.webp" alt="NOTEBOOK">
+                <h3>NOTEBOOKS</h3>
+                <p>&#8377;50</p>
+                <button class="add-to-cart" data-product="NOTEBOOK" data-price="50">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="IMAGES/fiiles.jpg" alt="FILES">
+                <h3>FILES</h3>
+                <p>&#8377;20</p>
+                <button class="add-to-cart" data-product="FILES" data-price="20">Add to Cart</button>
+            </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: &#8377;<span id="total">0.00</span></p>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Address" required>
+                <button type="submit">Complete Purchase</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 QuickArt. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

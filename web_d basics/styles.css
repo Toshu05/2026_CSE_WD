@@ -1,0 +1,42 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #007bff; color: white; }
+.logo { font-size: 1.5rem; font-weight: bold; }
+nav ul { list-style: none; display: flex; gap: 1rem; }
+.search-cart { display: flex; gap: 0.5rem; }
+.hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(to right, #007bff, #00d4ff); color: white; }
+.cta-btn { background: #ff6b6b; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px; }
+.product-grid { padding: 2rem; text-align: center; }
+.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+.product { background: white; padding: 1rem; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.product img { width: 100%; height: 200px; object-fit: cover; }
+.add-to-cart { background: #28a745; color: white; border: none; padding: 0.5rem; cursor: pointer; border-radius:14px;}
+.modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+.modal-content { background: white; margin: 15% auto; padding: 2rem; width: 80%; max-width: 500px; border-radius: 5px; }
+.close { float: right; font-size: 2rem; cursor: pointer; }
+footer { text-align: center; padding: 1rem; background: #333; color: white; }
+/* Style for the image (you said the size is perfect, but adding this for completeness) */
+.head-logo {
+    width: 30px; /* Adjust size if needed */
+    height: auto;
+}
+head {
+    /* 1. Turns on flexible arrangement */
+    display: flex; 
+    
+    /* 2. Vertically centers all the content (text, image, nav) */
+    align-items: center; 
+    
+    /* 3. Pushes the nav menu to the far right, leaving space in the middle */
+    justify-content: space-between; 
+    
+    /* Optional: Add some spacing around the whole header */
+    padding: 10px 20px;
+}
+/* Style for the QUICKCART text container */
+.logo {
+    /* Sets a small space to the right of the text */
+    margin-right: 5px; 
+    
+    /* Optional: To make sure text and logo are treated as one unit for spacing */
+    display: inline-block; 
+}
